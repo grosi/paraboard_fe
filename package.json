@@ -1,10 +1,6 @@
 {
-	"name": "sigma-vue",
-	"version": "1.0.2-SNAPSHOT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/primefaces/sigma-vue.git"
-	},
+	"name": "ParaBoard",
+	"version": "00.00.01",
 	"license": "MIT",
 	"scripts": {
 		"serve": "vue-cli-service serve",

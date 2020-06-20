@@ -1,4 +1,4 @@
-# sigma
+# ParaBoard
 
 ## Project setup
 ```

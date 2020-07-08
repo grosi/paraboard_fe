@@ -74,6 +74,7 @@ import '@fullcalendar/core/main.min.css';
 import '@fullcalendar/daygrid/main.min.css';
 import '@fullcalendar/timegrid/main.min.css';
 import './assets/layout/layout.scss';
+import './registerServiceWorker'
 
 Vue.use(ToastService);
 Vue.directive('tooltip', Tooltip);

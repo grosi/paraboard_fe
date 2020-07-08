@@ -173,10 +173,10 @@
                     <template #header>
                         <Button type="button" icon="pi pi-cog"></Button>
                     </template>
-                    <template #body="slotProps">
+                    <!-- <template #body="slotProps">
                         <Button type="button" icon="pi pi-search" class="p-button-success" style="margin-right: .5em"></Button>
                         <Button type="button" icon="pi pi-pencil" class="p-button-warning"></Button>
-                    </template>
+                    </template> -->
                 </Column>
 			</DataTable>
 		</div>

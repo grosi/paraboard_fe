@@ -39,11 +39,12 @@ export default {
             mobileMenuActive: false,
             menu : [
                 {label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/'},
-                {label: 'Live', icon: 'pi pi-fw pi-compass' , to: '/livetrack'},
+                {label: 'Tracking', icon: 'pi pi-fw pi-compass' , to: '/livetrack'},
                 {
                     label: 'Weather', icon: 'pi pi-fw pi-cloud',
                     items: [
-                        {label: 'Empty Page', icon: 'pi pi-fw pi-circle-off', to: '/empty'}
+                        {label: 'Live', icon: 'pi pi-fw pi-circle-off', to: '/liveweather'},
+                        {label: 'Forecast', icon: 'pi pi-fw pi-eye', to: '/weatherforecast'}
                     ]
                 },
                 {

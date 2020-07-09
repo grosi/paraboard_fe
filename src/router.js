@@ -80,6 +80,16 @@ export default new Router({
 			path: '/livetrack',
 			name: 'livetrack',
             component: () => import('./components/LiveTrack.vue')
+        },
+        {
+			path: '/liveweather',
+			name: 'liveweather',
+            component: () => import('./components/LiveWeather.vue')
+        },
+        {
+			path: '/weatherforecast',
+			name: 'weatherforecast',
+            component: () => import('./components/WeatherForecast.vue')
 		},
         {
 			path: '/flightbook',

@@ -6,7 +6,7 @@
             <div :class="sidebarClass" @click="onSidebarClick" v-show="isSidebarVisible()">
                 <div class="layout-logo">
                     <router-link to="/">
-                        <img alt="Logo" :src="logo" />
+                        <img alt="Logo" :src="logo"  width="200"/>
                     </router-link>
                 </div>
 
@@ -39,6 +39,20 @@ export default {
             mobileMenuActive: false,
             menu : [
                 {label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/'},
+                {label: 'Live', icon: 'pi pi-fw pi-compass' , to: '/livetrack'},
+                {
+                    label: 'Weather', icon: 'pi pi-fw pi-cloud',
+                    items: [
+                        {label: 'Empty Page', icon: 'pi pi-fw pi-circle-off', to: '/empty'}
+                    ]
+                },
+                {
+                    label: 'Log', icon: 'pi pi-fw pi-file',
+                    items: [
+                        {label: 'Flight Book', icon: 'pi pi-fw pi-table', to: '/flightbook'},
+                        {label: 'Maintenance', icon: 'pi pi-fw pi-cog', to: '/maintenancelog'}
+                    ]
+                },
                 {
                     label: 'Menu Modes', icon: 'pi pi-fw pi-cog',
                     items: [
@@ -53,7 +67,7 @@ export default {
                         {label: 'Light', icon: 'pi pi-fw pi-bars',  command: () => this.layoutColorMode = 'light' }
                     ]
                 },
-                {
+                /* {
                     label: 'Components', icon: 'pi pi-fw pi-globe', badge: '9',
                     items: [
                         {label: 'Sample Page', icon: 'pi pi-fw pi-th-large', to: '/sample'},
@@ -117,9 +131,9 @@ export default {
                             ]
                         }
                     ]
-                },
+                }, */
                 {label: 'Documentation', icon: 'pi pi-fw pi-question', command: () => {window.location = "#/documentation"}},
-                {label: 'View Source', icon: 'pi pi-fw pi-search', command: () => {window.location = "https://github.com/primefaces/sigma-vue"}}
+                // {label: 'View Source', icon: 'pi pi-fw pi-search', command: () => {window.location = "https://github.com/primefaces/sigma-vue"}}
             ]
         }
     },

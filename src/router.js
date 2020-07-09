@@ -75,6 +75,21 @@ export default new Router({
 			path: '/empty',
 			name: 'empty',
 			component: () => import('./components/EmptyPage.vue')
+        },
+        {
+			path: '/livetrack',
+			name: 'livetrack',
+            component: () => import('./components/LiveTrack.vue')
+		},
+        {
+			path: '/flightbook',
+			name: 'flightbook',
+			component: () => import('./components/FlightBook.vue')
+        },
+        {
+			path: '/maintenancelog',
+			name: 'maintenancelog',
+			component: () => import('./components/MaintenanceLog.vue')
 		},
 		{
 			path: '/documentation',
